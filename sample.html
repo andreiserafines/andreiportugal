@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Div Example</title>
+  <style>
+    #toggleDiv {
+      display: none;
+      padding: 20px;
+      background-color: #f0f0f0;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="toggleButton" onclick="toggleDiv()">Show More</button>
+
+  <div id="toggleDiv">
+    <p>This is the content inside the div that you can show or hide.</p>
+  </div>
+
+  <script>
+    function toggleDiv() {
+      const div = document.getElementById("toggleDiv");
+      const button = document.getElementById("toggleButton");
+
+      if (div.style.display === "none") {
+        div.style.display = "block";
+        button.textContent = "Show Less";
+      } else {
+        div.style.display = "none";
+        button.textContent = "Show More";
+      }
+    }
+  </script>
+
+</body>
+</html>

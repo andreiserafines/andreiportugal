@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="h-full">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css" />
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body class="relative h-full w-full bg-slate-950 flex flex-col">
@@ -21,22 +23,27 @@
             <nav class="mx-auto px-3 py-4 xl:w-[1220px] flex items-center justify-between md:flex-row">
                 <h2 class="text-2xl text-gray-400 font-bold">andrei.</h2>
 
-                <ul class="flex flex-col items-center gap-6 md:flex-row">
-                    <li class="cursor-pointer"><a
-                            class="font-semibold text-zinc-400 text-sm hover:text-cyan-300 duration-500"
-                            href="#profile">Profile</a></li>
-                    <li class="cursor-pointer"><a
-                            class="font-semibold text-zinc-400 text-sm hover:text-cyan-300 duration-500"
-                            href="#about">About</a></li>
-                    <li class="cursor-pointer"><a
-                            class="font-semibold text-zinc-400 text-sm hover:text-cyan-300 duration-500"
-                            href="#experience">Experience</a></li>
-                    <li class="cursor-pointer"><a
-                            class="font-semibold text-zinc-400 text-sm hover:text-cyan-300 duration-500"
-                            href="#projects">Projects</a></li>
-                    <li class="cursor-pointer"><a
-                            class="font-semibold text-zinc-400 text-sm hover:text-cyan-300 duration-500"
-                            href="#contact">Contacts</a></li>
+                <ul class="hidden flex-col md:block md:flex items-center gap-6 md:flex-row">
+                    <li class="cursor-pointer">
+                        <a class="font-semibold text-zinc-400 text-sm hover:text-teal-400 duration-500"
+                            href="#profile">Profile</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a class="font-semibold text-zinc-400 text-sm hover:text-teal-400 duration-500"
+                            href="#about">About</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a class="font-semibold text-zinc-400 text-sm hover:text-teal-400 duration-500"
+                            href="#skills">Skills</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a class="font-semibold text-zinc-400 text-sm hover:text-teal-400 duration-500"
+                            href="#project">Projects</a>
+                    </li>
+                    <li class="cursor-pointer">
+                        <a class="font-semibold text-zinc-400 text-sm hover:text-teal-400 duration-500"
+                            href="#contact">Contact</a>
+                    </li>
                 </ul>
 
                 <button class="flex items-center lg:hidden">
@@ -50,129 +57,707 @@
             <div class="flex flex-col-reverse gap-2 md:flex-row md:justify-between w-full p-4">
                 <!-- Left -->
                 <div class="text-center flex flex-col mx-auto w-full md:w-1/2 md:text-left item-1">
-                    <h1
-                        class="text-center text-4xl font-medium md:text-left md:text-5xl bg-gradient-to-r from-gray-200 to-teal-800 bg-clip-text text-transparent mb-2">
+                    <h1 class="text-center text-4xl font-medium md:text-left md:text-5xl text-teal-300 mb-2">
                         Ronald Andrei Portugal
                     </h1>
 
-                    <h4 class="text-xl font-normal md:text-xl text-neutral-500 mb-6">Front-End Developer</h4>
+                    <h4 class="text-xl font-normal md:text-xl text-neutral-500 mb-6" id="description">
+                        Front-End Developer
+                    </h4>
 
-                    <p class="leading-7 mb-8 text-zinc-400 text-normal font-sm text-justify md:text-left">Lorem ipsum,
-                        dolor sit amet consectetur
-                        adipisicing elit. Voluptatum debitis aliquam culpa
-                        laborum vitae iusto sint esse voluptatem, molestiae dolorem ad tempore nesciunt recusandae,
-                        doloribus dolorum harum assumenda vel placeat?</p>
+                    <p class="leading-7 mb-7 text-zinc-400 text-normal font-sm text-center md:text-left">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Voluptatum debitis aliquam culpa laborum vitae iusto sint esse
+                        voluptatem, molestiae dolorem ad tempore nesciunt recusandae,
+                        doloribus dolorum harum assumenda vel placeat?
+                    </p>
 
-                    <a href="" target="_blank"
-                        class="bg-gray-700 text-zinc-400 border border-neutral-900 mx-auto md:w-1/4 md:mx-0 p-3 mb-8 rounded-md shadow-lg flex items-center justify-evenly text-sm font-medium
-                        hover:border-neutral-500 transition duration-500">
-                        <i class='bx bxs-file-pdf'></i>Download CV
-                    </a>
+                    <div class="flex flex-row gap-4">
+                        <a href=""
+                            class="bg-gray-900 text-zinc-400 border border-zinc-800 mx-auto w-1/2 md:w-1/3 md:mx-0 p-3 mb-8 rounded-md shadow-lg flex justify-center gap-2 items-center text-sm font-semibold hover:border-teal-400 transition duration-500">
+                            Hire Me <i class='bx bxs-paper-plane text-2xl'></i>
+                        </a>
+                        
+                        <a href="" target="_blank"
+                            class="bg-gray-700 text-zinc-400 border border-zinc-800 mx-auto w-1/2 md:w-1/3 md:mx-0 p-3 mb-8 rounded-md shadow-lg flex justify-center gap-2 items-center text-sm font-semibold hover:border-teal-400 transition duration-500">
+                            Download CV <i class='bx bx-download text-2xl'></i>
+                        </a>
+                    </div>
 
-                    <ul class="flex inline-flex gap-4 items-center mx-auto md:mx-0 item-3">
-                        <li class="border border-zinc-700 hover:border-neutral-500 transition duration-500 
-                        bg-gray-700 p-2 rounded-md cursor-pointer">
+                    <ul class="flex inline-flex gap-3 items-center mx-auto md:mx-0 item-3">
+                        <li
+                            class="border border-zinc-800 hover:border-teal-400 transition duration-500 bg-gray-900 p-2 rounded-full cursor-pointer">
                             <a class="flex items-center" href=""><ion-icon name="logo-facebook"
-                                    class="text-zinc-400 w-8 h-8 "></ion-icon></a>
+                                    class="text-zinc-400 w-8 h-8"></ion-icon></a>
                         </li>
 
-                        <li class="border border-zinc-700 hover:border-neutral-500 transition duration-500 
-                        bg-gray-700 p-2 rounded-md cursor-pointer">
+                        <li
+                            class="border border-zinc-800 hover:border-teal-400 transition duration-500 bg-gray-900 p-2 rounded-full cursor-pointer">
                             <a class="flex items-center" href=""><ion-icon name="logo-instagram"
                                     class="text-zinc-400 w-8 h-8"></ion-icon></a>
                         </li>
 
-                        <li class="border border-zinc-700 hover:border-neutral-500 transition duration-500 
-                        bg-gray-700 p-2 rounded-md cursor-pointer">
+                        <li
+                            class="border border-zinc-800 hover:border-teal-400 transition duration-500 bg-gray-900 p-2 rounded-full cursor-pointer">
                             <a class="flex items-center" href=""><ion-icon name="logo-github"
                                     class="text-zinc-400 w-8 h-8"></ion-icon></a>
                         </li>
 
-                        <li class="border border-zinc-700 hover:border-neutral-500 transition duration-500 
-                        bg-gray-700 p-2 rounded-md cursor-pointer">
+                        <li
+                            class="border border-zinc-800 hover:border-teal-400 transition duration-500 bg-gray-900 p-2 rounded-full cursor-pointer">
                             <a class="flex items-center" href=""><ion-icon name="logo-linkedin"
                                     class="text-zinc-400 w-8 h-8"></ion-icon></a>
                         </li>
                     </ul>
-
                 </div>
 
                 <!-- Right -->
                 <div class="text-center mx-auto w-full md:w-1/2 flex items-center justify-center item-2">
-                    <img src="img/hero2.png" class="w-[600px] shad animate-pulse duration-3000" alt="heroImg">
+                    <img src="img/hero2.png" class="w-[600px] shad animate-pulse duration-3000" alt="heroImg" />
                 </div>
             </div>
 
             <!-- Arrow down -->
             <a href="#about" class="hidden absolute md:block md:bottom-10 p-4 rounded-full animate-bounce">
                 <ion-icon name="caret-down-outline"
-                    class="border border-zinc-800 p-3 h-5 w-5 bg-gray-800 rounded-full text-gray-400"></ion-icon>
+                    class="border border-zinc-800 p-3 h-5 w-5 bg-gray-800 rounded-full text-gray-400 hover:border-teal-400 duration-500"></ion-icon>
             </a>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="flex flex-col justify-center items-center mx-auto xl:w-[1220px]">
-            <h3>aboutme</h3>
+        <section id="about" class="flex flex-col justify-center items-center mx-auto mb-6 xl:w-[1220px]">
+            <!-- Title -->
+            <h1
+                class="text-xl text-teal-400 my-5 item-1 px-4 py-2 bg-gray-900 border border-zinc-800 rounded-md shadow-lg">
+                About.Me
+            </h1>
+            <p class="text-gray-400 item-3 text-sm">Discover more about me.</p>
 
-            <!-- about me -->
-            <div class="flex md:flex-row gap-6 mt-10">
-        
-                <div class="w-1/3 p-4 item-4">
-                    <img src="img/LB_BSIT_PORTUGAL, RONALD ANDREI_8675 .jpg"
-                        class="shadow-xl rounded-md" alt="">
+            <!-- Infos -->
+            <div class="flex md:flex-row gap-6 mt-8">
+                <div class="hidden w-1/3 p-4 item-4 md:block">
+                    <img src="img/LB_BSIT_PORTUGAL, RONALD ANDREI_8675 .jpg" class="rounded-md bg-card shadow-xl"
+                        alt="" />
                 </div>
 
-                <div class=" w-full p-5 item-2">
-                    <div class="border-l-2 border-zinc-500 px-6">
+                <div class="w-full p-5 item-2">
+                    <div class="border-l-2 border-gray-500 pl-4 md:pl-none md:px-5 item-4">
                         <!-- Objectives -->
-                        <h1 class="text-xl font-semibold mb-4 text-neutral-300 flex items-center gap-2">Objective
-                            <i class='bx bxs-check-circle' ></i></h1>
 
-                        <p class="mb-8 leading-6 text-normal text-zinc-400">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Officiis, sit sint assumenda adipisci natus est maxime ad eaque officia
-                            alias perspiciatis mollitia. Quod, optio reiciendis vel dolor laudantium at nobis.</p>
+                        <div class="group mb-8 item-3">
+                            <h1 class="text-lg font-semibold text-neutral-300 flex items-center gap-2">
+                                Personal Overview
+                                <i class="bx bxs-check-circle text-sky-300"></i>
+                            </h1>
 
-                        <!-- Work Experience -->
-                        <h1 class="text-xl font-semibold mb-4 text-neutral-300 flex items-center gap-2">Work Experience
-                            <i class='bx bxs-briefcase'></i></h1>
+                            <p class="mb-4 leading-6 text-normal text-zinc-400">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Impedit, molestias!
+                            </p>
+                        </div>
 
-                        <p class="mb-4 leading-6 text-normal text-zinc-400">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Officiis, sit sint assumenda adipisci natus est maxime ad eaque officia
-                            alias perspiciatis mollitia. Quod, optio reiciendis vel dolor laudantium at nobis.</p>
+                        <div class="group mb-8 item-3">
+                            <!-- Work Experience -->
+                            <h1 class="text-lg font-semibold text-neutral-300 flex items-center gap-2">
+                                Work Experience
+                                <i class="bx bxs-briefcase text-sky-300"></i>
+                            </h1>
 
-                        <p class="mb-4 leading-6 text-normal text-zinc-400">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Officiis, sit sint assumenda adipisci natus est maxime ad eaque officia
-                            alias perspiciatis mollitia. Quod, optio reiciendis vel dolor laudantium at nobis.</p>
+                            <div class="flex justify-between flex-col md:flex-row mb-2">
+                                <p class="text-sm text-zinc-500 font-bold">Philippine Navy</p>
+                                <p class="text-sm text-zinc-500 font-bold">
+                                    Aug 2023 - Present
+                                </p>
+                            </div>
 
-                        <p class="mb-8 leading-6 text-normal font-sm text-zinc-400">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit. Officiis, sit sint assumenda adipisci natus est maxime ad eaque officia
-                            alias perspiciatis mollitia. Quod, optio reiciendis vel dolor laudantium at nobis.</p>
-                    
-                         <!-- Education -->
-                         <h1 class="text-xl font-semibold mb-4 text-neutral-300 flex items-center gap-2">Education
-                            <i class='bx bxs-graduation' ></i></h1>
+                            <p class="mb-4 leading-6 text-normal text-zinc-400">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Officiis, sit sint assumenda adipisci natus est maxime ad
+                                eaque officia alias perspiciatis mollitia. Quod, optio
+                                reiciendis vel dolor laudantium at nobis.
+                            </p>
+                        </div>
 
-                        <p class="mb-4 leading-6 text-normal text-zinc-400">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Officiis, sit sint assumenda adipisci natus est maxime ad eaque officia
-                            alias perspiciatis mollitia. Quod, optio reiciendis vel dolor laudantium at nobis.</p>
+                        <div class="group mb-8 item-3">
+                            <!-- Internship -->
+                            <h1 class="text-lg font-semibold text-neutral-300 flex items-center gap-2">
+                                Intership
+                                <i class="bx bxs-graduation text-sky-300"></i>
+                            </h1>
 
+                            <div class="flex justify-between flex-col md:flex-row mb-2">
+                                <p class="text-sm text-zinc-500 font-bold">Lamina Studios</p>
+                                <p class="text-sm text-zinc-500 font-bold">
+                                    Feb 2023 - May 2023
+                                </p>
+                            </div>
+
+                            <p class="mb-4 leading-6 text-normal text-zinc-400">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Officiis, sit sint assumenda adipisci natus est maxime ad
+                                eaque officia alias perspiciatis mollitia. Quod, optio
+                                reiciendis vel dolor laudantium at nobis.
+                            </p>
+                        </div>
+
+                        <div class="group mb-8 item-3">
+                            <!-- Education -->
+                            <h1 class="text-lg font-semibold text-neutral-300 flex items-center gap-2">
+                                Education
+                                <i class="bx bxs-graduation text-sky-300"></i>
+                            </h1>
+
+                            <div class="flex justify-between flex-col md:flex-row mb-2">
+                                <p class="text-sm text-zinc-500 font-bold">
+                                    Laguna State Polytechnic University
+                                </p>
+                                <p class="text-sm text-zinc-500 font-bold">
+                                    Aug 2019 - Jul 2023
+                                </p>
+                            </div>
+
+                            <p class="mb-4 leading-6 text-normal text-zinc-400">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Officiis, sit sint assumenda adipisci natus est maxime ad
+                                eaque officia alias perspiciatis mollitia. Quod, optio
+                                reiciendis vel dolor laudantium at nobis.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
+        <!-- Skills Section -->
+        <section id="skills" class="flex flex-col justify-center items-center mx-auto mb-10 xl:w-[1220px]">
+            <!-- Title -->
+            <h1
+                class="text-xl text-teal-400 my-5 item-1 px-4 py-2 bg-gray-900 border border-zinc-800 rounded-md shadow-lg">
+                Tech.Skills
+            </h1>
+            <p class="text-gray-400 item-3 text-sm">
+                Here are the stacks that powers my projects.
+            </p>
+
+            <div class="flex flex-row md:flex-col mt-10">
+                <div class="flex flex-col md:flex-row gap-5 p-4 item-4">
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-html5 text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-css3 text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-javascript text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-tailwind-css text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-bootstrap text-7xl text-gray-600"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-5 p-4 item-4">
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-php text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-react text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-vuejs text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-jquery text-7xl text-gray-600"></i>
+                    </div>
+
+                    <div
+                        class="border border-zinc-800 bg-gray-900 flex items-center p-2 rounded-md hover:border-teal-400 duration-500 cursor-pointer">
+                        <i class="bx bxl-git text-7xl text-gray-600"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project"
+            class="flex flex-col justify-center items-center mx-auto rounded-xl shadow-xl xl:w-[1220px] pb-12 bg-neutral-500 bg-opacity-10 backdrop-blur-lg">
+            <div
+                class="absolute z-[-2] bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+            </div>
+
+            <!-- Title -->
+            <h1
+                class="text-xl z-100 text-teal-400 mb-5 mt-10 item-1 px-4 py-2 bg-gray-900 border border-zinc-800 rounded-md shadow-lg">
+                Projects</h1>
+            <p class="z-100 text-gray-400 item-3 text-sm">Check out my recent projects.</p>
+
+
+            <!-- Project containers -->
+            <div class="grid md:grid-cols-4 gap-4 mt-8 px-8 z-100 item-1">
+                <!-- project 1 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 2 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 4 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project containers 2 -->
+            <div id="toggleDiv" class="grid md:grid-cols-4 gap-4 mt-4 px-8 z-100 item-1 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                <!-- project 1 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 2 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 4 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 1 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 2 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project 4 -->
+                <div class="border border-zinc-700 rounded-md bg-gray-800 flex flex-col p-3 item-1">
+                    <div class="card">
+                        <img src="img/project/project-1.png" class="border-2 border-teal-700 p-3 flex items-center rounded-md bg-white shadow-xl cursor-pointer object-cover" alt="Card Image"/>
+                        <div class="overlay flex gap-2 justify-center">
+                            <button class=""><i class='bx bx-link text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500'></i></button>
+                            <button class=""><i class='bx bxl-github text-2xl text-teal-300 py-1 px-2 rounded-full hover:bg-zinc-600 duration-500' ></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <h3 class="text-lg my-2">Example.com</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                            soluta labore alias quaerat, voluptate sint adipisci architecto
+                            dicta amet doloremque!
+                        </p>
+                        <div class="flex flex-row wrap gap-2">
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                HTML</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                CSS</p>
+                            <p
+                                class="border-2 border-zinc-700 bg-gray-900 rounded-lg text-bold text-teal-300 text-xs p-1 text-center">
+                                Javascript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mt-4 z-100 bg-gray-700 text-xs font-bold text-gray-300 py-3 px-4 rounded-full border border-zinc-800 flex items-center" id="toggleButton" onclick="toggleDiv()">
+                Show More
+            </button>
+        </section>
+
+        <section id="contact"
+            class="flex flex-col justify-center items-center mx-4 md:mx-auto rounded-xl mt-10 shadow-xl xl:w-[1220px]">
+
+            <!-- Title -->
+            <h1 class="text-xl text-teal-400 mb-5 mt-10 item-1 px-4 py-2 bg-gray-900 border border-zinc-800 rounded-md shadow-lg">
+                Contact</h1>
+            <!-- <p class="text-gray-400 item-3 text-sm">Get in touch.</p> -->
+
+            <div class="mt-2 flex flex-col md:flex-row justify-between mx-auto w-full">
+
+                <div class="w-full text-center md:text-start md:w-1/3 pt-4 px-2">
+                    <h3 class="mb-2 text-2xl">Let's Work Together!</h3>
+                    <p class="text-sm text-gray-400 mb-5">I'm always happy to have a conversation whether it's for a potential project request, to get some advice, to ask a question or just to network, my inbox is always open. I'll get back to you ASAP</p>
+                    <ul>
+                        <li class="flex flex-row gap-4 mb-4 items-center">
+                            <i class='bx bxs-envelope text-2xl text-teal-400 border border-zinc-800 py-2 px-3 bg-gray-900 rounded-md'></i>
+                            <span class="text-normal font-normal text-gray-400">andreispdev@gmail.com</span>
+                        </li>
+
+                        <li class="flex flex-row gap-4 mb-4 items-center">
+                            <i class='bx bxs-phone text-2xl text-teal-400 border border-zinc-800 py-2 px-3 bg-gray-900 rounded-md'></i>
+                            <span class="text-normal font-normal text-gray-400">+63 928 407 4508</span>
+                        </li>
+
+                        <li class="flex flex-row gap-4 mb-4 items-center">
+                            <i class='bx bxs-home text-2xl text-teal-400 border border-zinc-800 py-2 px-3 bg-gray-900 rounded-md'></i>
+                            <span class="text-normal font-normal text-gray-400">City of Santa Rosa Laguna, 4026</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 flex flex-col pt-4">
+                    <h3></h3>
+                    <input type="text" class="rounded-md p-3 mb-2 bg-gray-900 text-sm text-gray-200 font-medium border border-zinc-800" placeholder="Name">
+                    <input type="text" class="rounded-md p-3 mb-2 bg-gray-900 text-sm text-gray-200 font-medium border border-zinc-800" placeholder="Email">
+                    <textarea name="" id="" class="rounded-md p-3 mb-2 bg-gray-900 text-sm text-gray-200 font-medium border border-zinc-800" rows="5" placeholder="Message here..."></textarea>
+                    <button class="rounded-lg p-4 mb-3 text-sm text-gray-400 font-semibold border border-zinc-800 bg-gray-900 hover:bg-gray-600 duration-500 border border-zinc-700 hover:border-teal-400">Send</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="skills" class="flex flex-col justify-center items-center mx-auto mt-10">
+
+            <div class="xl:w-[1220px] p-5 hr">
+                <p class="text-gray-500 text-xs font-semibold text-center">Developed by <a href="" class="text-teal-400">Andrei Portugal</a></p>
+            </div>
+
+            <!-- Subfooter -->
+
+        </footer>
+
     </div>
 
-
     <!-- Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/project.js"></script>
     <script src="js/scrollreveal.js"></script>
 </body>
 
